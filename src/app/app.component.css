@@ -1,0 +1,64 @@
+:host {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+
+table {
+	margin: 10px auto 0;	
+}
+
+tr {
+	cursor: pointer;
+	border-bottom: 1px solid black;
+	clear: both;
+	display: block;
+}
+
+td {
+	width: 300px;
+	display: block;
+	float: left;
+	position: relative;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+td .svg-wrapper {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 10px;
+	background: white;
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+	border: 10px #ffff00 solid;
+}
+
+td svg {
+	width: 40px;
+	height: 40px;
+}
+
+td .team-role {
+	font-family: 'Roboto Slab', serif;
+	font-size: 0.75rem;
+}
+
+td .team-name {
+	display: block;
+	clear: both;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 5rem;
+	letter-spacing: -0.4rem;
+	line-height: 4rem;
+	word-wrap: break-word;
+	color: black;
+}

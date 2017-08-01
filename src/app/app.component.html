@@ -1,0 +1,31 @@
+<h1 [innerHTML]="title"></h1>
+<table>
+	<tbody>
+		<tr *ngFor="let game of games" (click)="onSelect(game)">
+			<td>
+				<span class="team-role">Home</span>
+				<span class="svg-wrapper">
+					<svg>
+				        <use xmlns:xlink="http://www.w3.org/1999/xlink" [attr.xlink:href]="game.home.svg"></use>
+				    </svg>
+				</span>
+				<span class="team-name">{{game.home.name}}</span>
+			</td>
+			<td>
+				<span class="team-role">Away</span>
+				<span class="svg-wrapper">
+					<svg>
+				        <use xmlns:xlink="http://www.w3.org/1999/xlink" [attr.xlink:href]="game.away.svg"></use>
+				    </svg>
+				</span>
+				<span class="team-name">{{game.away.name}}</span>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div *ngIf="selectedGame">
+	<h2></h2>
+</div>
+
+<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>
